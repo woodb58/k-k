@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+}
+
+.nav li {
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+main {
+height: 100vh;
+background-image: url("img/background.svg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("img/fam2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
