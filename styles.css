@@ -3,6 +3,7 @@ body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 header {
@@ -17,16 +18,8 @@ header {
 }
 
 .nav li {
-    margin: 0 1rem;
-    font-size: 2rem;
-}
-
-main {
-height: 100vh;
-background-image: url("img/background.svg");
-background-repeat: no-repeat;
-background-size: cover;
-
+  margin: 0 1rem;
+  font-size: 2rem;
 }
 
 .hero {
@@ -36,4 +29,46 @@ background-size: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0rem 3rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 10rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+.footer-phone,
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 6rem;
+  margin: 0 0;
+}
+
+.footer-logo img {
+  height: 5rem;
+  width: 5rem;
 }
