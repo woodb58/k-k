@@ -1,25 +1,68 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
-header {
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* header {
+
+} */
+
+.logo {
+  height: 8rem;
+  width: 24rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 4rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
 }
 
 .nav {
   display: flex;
-  align-items: flex-end;
-  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
 }
 
-.nav li {
-  margin: 0 1rem;
-  font-size: 2rem;
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 24px;
+  height: 4px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
 
 .hero {
@@ -57,18 +100,69 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 1rem 2rem 0rem 2rem;
+  background-color: rgba(128, 128, 128, 0.63);
 }
 
-.footer-phone,
+.footer-info,
 .footer-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0rem 6rem;
-  margin: 0 0;
 }
 
 .footer-logo img {
-  height: 5rem;
-  width: 5rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.footer-logo p {
+  font-size: 1.5rem;
+}
+
+.footer-info {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .nav {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+    padding: 3rem 0 0 10rem;
+  }
+
+  .nav.active {
+    left: 0;
+  }
 }

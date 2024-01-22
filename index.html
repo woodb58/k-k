@@ -8,13 +8,31 @@
   </head>
   <body>
     <header>
-      <img src="img/7.png" alt="" class="logo" id="logo" />
-      <ul class="nav" id="nav">
-        <li><a href="tel:555-555-5555">555-555-5555</a></li>
-        <li>Services</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+      <div class="navbar">
+        <img src="img/7.png" alt="" class="logo" id="logo" />
+        <ul class="nav" id="nav">
+          <li class="nav-item" id="nav-item">
+            <a href="tel:555-555-5555" class="nav-link" id="nav-link"
+              >555-555-5555</a
+            >
+          </li>
+          <li class="nav-item" id="nav-item">
+            <a href="#" class="nav-link" id="nav-link">Services</a>
+          </li>
+          <li class="nav-item" id="nav-item">
+            <a href="#" class="nav-link" id="nav-link">About</a>
+          </li>
+          <li class="nav-item" id="nav-item">
+            <a href="#" class="nav-link" id="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar" id="bar"></span>
+          <span class="bar" id="bar"></span>
+          <span class="bar" id="bar"></span>
+        </div>
+      </div>
     </header>
     <section class="hero" id="hero"></section>
 
@@ -72,9 +90,12 @@
     </main>
 
     <footer>
-      <div class="footer-phone" id="footer-phone">
-        <h1>Call Now</h1>
-        <p>555-555-5555</p>
+      <div class="footer-info" id="footer-info">
+        <p>
+          We Are Here To help <br />
+          Call Now <br />
+          555-555-5555
+        </p>
       </div>
 
       <div class="footer-logo" id="footer-logo">
