@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
@@ -13,18 +19,20 @@
           <img src="img/7.png" alt="" class="logo" id="logo" />
           <ul class="nav" id="nav">
             <li class="nav-item" id="nav-item">
-              <a href="tel:555-555-5555" class="nav-link" id="nav-link"
+              <a href="tel:555-555-5555" class="nav-link blue" id="nav-link"
                 >555-555-5555</a
               >
             </li>
             <li class="nav-item" id="nav-item">
-              <a href="#" class="nav-link" id="nav-link">Services</a>
+              <a href="#services" class="nav-link red" id="nav-link"
+                >Services</a
+              >
             </li>
             <li class="nav-item" id="nav-item">
-              <a href="#" class="nav-link" id="nav-link">About</a>
+              <a href="#about" class="nav-link blue" id="nav-link">About</a>
             </li>
             <li class="nav-item" id="nav-item">
-              <a href="#" class="nav-link" id="nav-link">Contact</a>
+              <a href="#contact" class="nav-link red" id="nav-link">Contact</a>
             </li>
           </ul>
 
@@ -34,74 +42,98 @@
             <span class="bar" id="bar"></span>
           </div>
         </div>
-
       </header>
     </section>
 
     <main>
-      <div class="card-container" id="card-container">
-        <div class="card" id="card">
+      <div class="card-container" id="services">
+        <div class="card heat" id="card">
           <img src="img/heat-icon.png" alt="icon of fire" />
           <h2>Heating</h2>
           <p class="card-info" id="card-info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            dolorem veritatis quae. Sunt tenetur nulla quo ipsa cumque totam
-            sequi consequatur eos ex omnis inventore, temporibus et. Quidem,
-            minima iusto.
+            Discover unparalleled warmth and comfort with K&K, your trusted
+            partner for local heating solutions. Midwest Winters are brutal and
+            we understand the significance of reliable heating you can trust.
+            Whether you're seeking a new heating system installation, repairs,
+            or routine maintenance, your neighbors at K&K have a solution for
+            you.
           </p>
         </div>
-        <div class="card" id="card">
+        <div class="card cool" id="card">
           <img src="img/cool-icon.png" alt="snowflake icon" />
           <h2>Air Conditioning</h2>
           <p class="card-info" id="card-info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            dolorem veritatis quae. Sunt tenetur nulla quo ipsa cumque totam
-            sequi consequatur eos ex omnis inventore, temporibus et. Quidem,
-            minima iusto.
+            When the summer heat is at its peak, rely on us to keep you cool and
+            refreshed. Our air conditioning services are designed to provide
+            efficient and reliable cooling solutions for your. From AC
+            installations featuring the latest energy-efficient technology to
+            swift repairs and routine maintenance, our skilled professionals
+            ensure your cooling system runs smoothly.
           </p>
         </div>
-        <div class="card" id="card">
+
+        <div class="card maintenance" id="card">
           <img src="img/maintenance-icon.png" alt="icon of wrench" />
           <h2>Maintenance</h2>
           <p class="card-info" id="card-info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            dolorem veritatis quae. Sunt tenetur nulla quo ipsa cumque totam
-            sequi consequatur eos ex omnis inventore, temporibus et. Quidem,
-            minima iusto.
+            Preventive maintenance is the key to a well-functioning heating and
+            cooling system. Our maintenance packages include regular check-ups,
+            cleaning, and tune-ups to identify and address potential issues
+            before they escalate. By investing in our maintenance services, you
+            not only save on energy costs but also enjoy peace of mind, knowing
+            that your HVAC system is in top condition.
           </p>
         </div>
       </div>
-      <div class="about">
-        <h1>About</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a quasi
-          qui at quibusdam nemo est non, facere corporis reprehenderit officiis
-          consectetur ut labore assumenda quo explicabo ipsum id. Corrupti.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum sed
-          beatae alias officiis velit deleniti quis ipsa aut unde ut sint, esse
-          adipisci voluptas nobis iste neque, ducimus itaque cupiditate Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Enim delectus culpa
-          aliquam error soluta reiciendis eum officia exercitationem suscipit
-          optio. Hic, in nam. Suscipit illum explicabo similique ipsum atque
-          eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
-          illo beatae ipsa nam nesciunt libero unde magnam tempora recusandae
-          fugit incidunt neque nihil sequi eos, consectetur aliquam qui amet
-          totam.
-        </p>
+      <div class="about" id="about">
+        <img
+          src="img/3.png"
+          alt="pic that says k&k heating and air"
+          class="about-img"
+        />
+        <div class="map-container">
+          <p>
+            We are your trusted partner for all your heating and air
+            conditioning needs in Paddock Lake, Bristol, Salem, Camp Lake,
+            Silver Lake, Trevor, Union Grove, Lake Geneva, Kenosha, Racine,
+            Pleasant Prairie, Somers, Walworth, as well as Northern Illinois.
+            proudly serving our communities with local care you can trust. At
+            K&K, we understand the importance of a comfortable and cozy home
+            environment, especially in the unpredictable climates of the
+            Midwest. That's why we are dedicated to providing unparalleled
+            heating and air solutions, focusing on local quality and exceptional
+            service. Our team of highly skilled technicians not only
+            excel in their craft but also understand the unique heating and
+            cooling needs of our local residents. Our experts deliver solutions
+            you can trust.
+          </p>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23506.408499468373!2d-88.101906!3d42.57013195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88057e632e0525d3%3A0x724db7758dc37d0!2sPaddock%20Lake%2C%20WI%2053168!5e0!3m2!1sen!2sus!4v1706133046100!5m2!1sen!2sus"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </main>
 
-    <footer>
+    <footer class="footer" id="contact">
       <div class="footer-info" id="footer-info">
         <p>
           We Are Here To help <br />
           Call Now <br />
-          555-555-5555
+          <a href="tel:555-555-5555" class="blue">555-555-5555</a>
         </p>
       </div>
 
       <div class="footer-logo" id="footer-logo">
-        <img src="img/2.png" alt="k&k logo" />
+        <a href="/">
+          <img src="img/2.png" alt="k&k logo" />
+        </a>
         <p>When Reliability Matters</p>
       </div>
     </footer>

@@ -2,63 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Domine", serif;
 }
 
 body {
   height: 100%;
+  width: 100vw;
   overflow-x: hidden;
+  background-color: #f2f3f5;
 }
 
 header {
-  background-color: rgba(42, 91, 165, 0.075);
-  position: sticky;
-  top: 0;
+  width: 100vw;
 }
 
 .logo {
-  height: 8rem;
-  width: 24rem;
+  height: 6rem;
+  width: 20rem;
 }
 
 li {
   list-style: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 a {
-  color: blue;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: rgba(42, 91, 165, 0.435);
   min-height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+  padding: 0 0.5rem;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 5rem;
-  padding-right: 2rem;
+  gap: 2rem;
+  padding-right: 12rem;
 }
 
 .nav-link {
-  transition: 1s ease;
+  transition: 0.4s ease;
 }
 
-.nav-link:hover {
+.red:hover {
   color: red;
+}
+
+.blue:hover {
+  color: blue;
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
+  position: fixed;
+  top: 5%;
+  right: 5%;
 }
 
 .bar {
@@ -83,7 +91,8 @@ a {
 .card-container {
   display: flex;
   justify-content: space-around;
-  margin: 2rem 4rem;
+  gap: 2rem;
+  margin: 6rem 3rem 8rem 3rem;
 }
 
 .card {
@@ -91,8 +100,23 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0rem 3rem;
-  font-size: 2rem;
+  padding: 2rem 3rem 5rem 3rem;
+  font-size: 1.5rem;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.heat {
+  background-color: rgb(235, 204, 147);
+  border-radius: 12%;
+}
+
+.cool {
+  background-color: rgba(109, 109, 242, 0.891);
+  border-radius: 12%;
+}
+.maintenance {
+  background-color: rgba(76, 74, 74, 0.679);
+  border-radius: 12%;
 }
 
 .about {
@@ -100,14 +124,39 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0rem 10rem;
+  margin: 8rem 0;
+  padding: 0rem 4rem;
 }
 
-footer {
+.about-img {
+  height: 15rem;
+  width: 80vw;
+}
+
+.map-container {
   display: flex;
   justify-content: space-around;
-  padding: 1rem 2rem 0rem 2rem;
-  background-color: rgba(128, 128, 128, 0.63);
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 0 2rem 0;
+}
+.map {
+  height: 25rem;
+  width: 25rem;
+}
+
+.map-container p {
+  padding: 3rem 3.5rem 1rem 3.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(42, 91, 165, 0.622);
+  box-shadow: 50px 50px 100px black;
+  position: relative;
 }
 
 .footer-info,
@@ -115,11 +164,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0rem 6rem;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .footer-logo img {
-  height: 8rem;
+  height: 5.5rem;
   width: 8rem;
 }
 
@@ -132,8 +182,7 @@ footer {
   text-align: center;
 }
 
-
-@media (max-width: 1100px) {
+@media (max-width: 1175px) {
   .hamburger {
     display: block;
   }
@@ -177,4 +226,56 @@ footer {
   .card-container {
     flex-direction: column;
   }
+
+  .map-container p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .map-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    gap: 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+  .card {
+    padding: 1rem 2rem 3.5rem 2rem;
+    font-size: 1rem;
+  }
+  .card img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .about {
+    margin: 1rem 0;
+    padding: 0 2rem;
+  }
+  .map-container {
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  .map-container p {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+
+  .map {
+    height: 20rem;
+    width: 20rem;
+    padding: 0 .5rem;
+  }
+
+  .footer {
+    align-items: center;
+  }
+  .footer-info {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
 }
