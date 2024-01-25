@@ -241,7 +241,8 @@ a {
 @media (max-width: 768px) {
 
   .hero {
-    background-image: url("img/fam2-min.jpg");
+    background-image: url("img/fam2-min.png");
+    back
   }
   .card-container {
     gap: 1.5rem;
