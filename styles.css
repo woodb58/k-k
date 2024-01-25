@@ -219,6 +219,10 @@ a {
     padding: 3rem 0 0 10rem;
   }
 
+  .tel {
+  
+  }
+
   .nav.active {
     left: 0;
   }
@@ -240,7 +244,7 @@ a {
 
 @media (max-width: 768px) {
   .hero {
-    background-image: url("img/fam2-min.png");
+    background-image: url("img/fam2-min.jpg");
   }
   .card-container {
     gap: 1.5rem;
