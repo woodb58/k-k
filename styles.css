@@ -239,10 +239,8 @@ a {
 }
 
 @media (max-width: 768px) {
-
   .hero {
     background-image: url("img/fam2-min.png");
-    back
   }
   .card-container {
     gap: 1.5rem;
@@ -272,7 +270,7 @@ a {
   .map {
     height: 20rem;
     width: 20rem;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 
   .footer {
@@ -282,5 +280,4 @@ a {
     font-size: 1.5rem;
     padding: 0 1rem;
   }
-
 }
