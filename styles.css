@@ -18,7 +18,7 @@ header {
 
 .logo {
   height: 6rem;
-  width: 20rem;
+  width: 17rem;
 }
 
 li {
@@ -155,7 +155,7 @@ a {
   display: flex;
   justify-content: space-around;
   background-color: rgba(42, 91, 165, 0.622);
-  box-shadow: 50px 50px 100px black;
+  box-shadow: 10px 10px 30px black;
   position: relative;
 }
 
@@ -241,7 +241,7 @@ a {
 
 @media (max-width: 768px) {
   .hero {
-    background-image: url("img/fam2-min.jpg");
+    background-image: url("img/house.jpg");
   }
   .card-container {
     gap: 1.5rem;
