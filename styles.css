@@ -19,6 +19,7 @@ header {
 .logo {
   height: 6rem;
   width: 17rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 li {
@@ -32,7 +33,7 @@ a {
 }
 
 .navbar {
-  background-color: rgba(42, 91, 165, 0.435);
+  background-color: rgba(74, 145, 226, 0.794);
   min-height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -82,12 +83,44 @@ a {
 .hero {
   height: 100vh;
   width: 100vw;
-  background-image: url("img/fam2.jpg");
+  position: relative;
+  background-image: url("img/hero-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.hero-call {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(74, 144, 226, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2rem;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+.hero-call img {
+  height: 20rem;
+  width: 20rem;
+}
+
+.hero-call h1, h2, p {
+  padding: .5rem 0;
+}
 .card-container {
   display: flex;
   justify-content: space-around;
@@ -185,6 +218,7 @@ a {
 @media (max-width: 1175px) {
   .hamburger {
     display: block;
+    z-index: 999;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -213,7 +247,7 @@ a {
     text-align: center;
     transition: 0.3s;
   }
-  
+
   .nav-item {
     padding: 1rem 0;
     margin: 0;
@@ -222,6 +256,10 @@ a {
   .nav.active {
     left: 0;
     padding: 9rem 0;
+  }
+
+  .hero-call {
+    display: none;
   }
 
   .card-container {
@@ -240,9 +278,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    background-image: url("img/house.jpg");
-  }
   .card-container {
     gap: 1.5rem;
     margin: 1.5rem 1rem;
