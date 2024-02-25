@@ -261,9 +261,10 @@ p {
   }
 
   .hero-call {
-    /* display: none; */
+    display: none;
     padding: 1rem;
     font-size: 1.5rem;
+    z-index: 1;
   }
 
   .hero-call img {
