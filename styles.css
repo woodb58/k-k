@@ -102,7 +102,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(74, 144, 226, 0.35);
+  background: rgba(74, 145, 226, 0.623);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -118,8 +118,10 @@ a {
   width: 20rem;
 }
 
-.hero-call h1, h2, p {
-  padding: .5rem 0;
+.hero-call h1,
+h2,
+p {
+  padding: 0.5rem 0;
 }
 .card-container {
   display: flex;
@@ -259,7 +261,14 @@ a {
   }
 
   .hero-call {
-    display: none;
+    /* display: none; */
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .hero-call img {
+    height: 15rem;
+    width: 15rem;
   }
 
   .card-container {
@@ -278,6 +287,17 @@ a {
 }
 
 @media (max-width: 768px) {
+  .hero-call {
+    font-size: 1rem;
+    padding: 3rem 0;
+    height: 80vw;
+    width: 60vw;
+  }
+
+  .hero-call img {
+    height: 10rem;
+    width: 10rem;
+  }
   .card-container {
     gap: 1.5rem;
     margin: 1.5rem 1rem;
